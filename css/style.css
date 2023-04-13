@@ -19,7 +19,7 @@
 }
 
 body {
-    background: linear-gradient(to right, var(--gradient-color-left), var(--gradient-color-right));
+    background: linear-gradient(to top, var(--gradient-color-left), var(--gradient-color-right));
 }
 
 .output {
