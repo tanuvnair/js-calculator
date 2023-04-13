@@ -20,27 +20,26 @@
         <div class="calculator">
             <div class="calculator-grid">
                 <div class="output">
-                    <div class="previous-operand">123 +</div>
-                    <div class="current-operand">456</div>
+                    <div id="inputLabel" class="current-operand">0</div>
                 </div>
-                <button class="span-two imp-button">AC</button>
-                <button class="imp-button">DEL</button>
-                <button class="imp-button">÷</button>
-                <button>1</button>
-                <button>2</button>
-                <button>3</button>
-                <button class="imp-button">×</button>
-                <button>4</button>
-                <button>5</button>
-                <button>6</button>
-                <button class="imp-button">+</button>
-                <button>7</button>
-                <button>8</button>
-                <button>9</button>
-                <button class="imp-button">-</button>
-                <button class="border-radius-bl imp-button">.</button>
-                <button>0</button>
-                <button class="span-two border-radius-br imp-button">=</button>
+                <button class="span-two imp-button" onclick="pushBtn(this)">AC</button>
+                <button class="imp-button" onclick="pushBtn(this);">DEL</button>
+                <button class="imp-button" onclick="pushBtn(this);">/</button>
+                <button onclick="pushBtn(this);">1</button>
+                <button onclick="pushBtn(this);">2</button>
+                <button onclick="pushBtn(this);">3</button>
+                <button class="imp-button" onclick="pushBtn(this);">*</button>
+                <button onclick="pushBtn(this);">4</button>
+                <button onclick="pushBtn(this);">5</button>
+                <button onclick="pushBtn(this);">6</button>
+                <button class="imp-button" onclick="pushBtn(this);">+</button>
+                <button onclick="pushBtn(this);">7</button>
+                <button onclick="pushBtn(this);">8</button>
+                <button onclick="pushBtn(this);">9</button>
+                <button class="imp-button" onclick="pushBtn(this);">-</button>
+                <button class="border-radius-bl imp-button" onclick="pushBtn(this);">.</button>
+                <button onclick="pushBtn(this);">0</button>
+                <button class="span-two border-radius-br imp-button" onclick="pushBtn(this);">=</button>
             </div>
         </div>
     </body>
