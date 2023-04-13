@@ -1,0 +1,81 @@
+:root {
+    --gradient-color-left: #ADD7F6;
+    --gradient-color-right: #3B28CC;
+    --primary-color: #F3F9D2;
+    --rgb-primary-color: 243, 249, 210;
+    --secondary-color: #241715;
+    --rgb-secondary-color: 36, 23, 21;
+    --accent-color: #F92A82;
+    --rgb-accent-color: 249, 42, 130;
+}
+
+
+* {
+    box-sizing: border-box;
+    font-family: 'Mulish', sans-serif;
+    font-weight: normal;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background: linear-gradient(to right, var(--gradient-color-left), var(--gradient-color-right));
+}
+
+.output {
+    grid-column: 1 / -1;
+    background-color: rgba(var(--rgb-secondary-color, 0.75));
+    color: var(--primary-color);
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+    flex-direction: column;
+    padding: 25px;
+    word-wrap: break-word;
+    word-break: break-all;
+    border-radius: 50px 50px 0 0;
+}
+
+.output .previous-operand {
+    color: rgba(var(--rgb-primary-color), 0.75);
+    font-size: 1.5rem;
+}
+
+.output .current-operand {
+    margin-top: 10px;
+    color: rgba(var(--rgb-primary-color), 1);
+    font-size: 2.5rem;
+    font-weight: 600;
+}
+
+.calculator-grid {
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    min-height: 100vh;
+    grid-template-columns: repeat(4, 100px);
+    grid-template-rows: minmax(120px, auto)repeat(5, 100px);
+}
+
+.calculator-grid > button {
+    cursor: pointer;
+    font-size: 2rem;
+    border: 0.5px solid rgba(var(--rgb-secondary-color), 0.5);
+    outline: none;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    transition: all 0.3s ease 0s;
+}
+
+.calculator-grid > button:hover {
+    background-color: rgba(var(--rgb-primary-color), 0.9);
+    color: var(--secondary-color);
+}
+
+.imp-button {
+    font-weight: 6  00;
+}
+
+.span-two {
+    grid-column: span 2;
+}
