@@ -13,7 +13,7 @@
 }
 
 body {
-    background: url(/img/waves.svg) no-repeat center;
+    background: url(./img/waves.svg) no-repeat center;
     background-size: cover;
 }
 
