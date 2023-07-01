@@ -1,12 +1,12 @@
 :root {
-    --primary-color: #2176AE;
-    --secondary-color: #3B4856;
-    --accent-color: #D6F4FF;
+    --primary-color: #2176ae;
+    --secondary-color: #3b4856;
+    --accent-color: #d6f4ff;
 }
 
 * {
     box-sizing: border-box;
-    font-family: 'Mulish', sans-serif;
+    font-family: "Roboto Mono", monospace;
     font-weight: normal;
     padding: 0;
     margin: 0;
@@ -19,16 +19,16 @@ body {
 
 .output {
     background-color: var(--secondary-color);
-    color: var(--accent-color);
+    color: white;
     grid-column: 1 / -1;
     display: flex;
     align-items: flex-end;
     justify-content: space-around;
     flex-direction: column;
-    padding: 25px;
+    padding: 20px;
     word-wrap: break-word;
     word-break: break-all;
-    border-radius: 20px 20px 0 0;
+    margin-bottom: 8px;
 }
 
 .output .current-operand {
@@ -43,13 +43,13 @@ body {
     align-content: center;
     min-height: 100vh;
     grid-template-columns: repeat(4, 100px);
-    grid-template-rows: minmax(120px, auto)repeat(5, 100px);
+    grid-template-rows: minmax(120px, auto) repeat(5, 100px);
 }
 
 .calculator-grid > button {
     cursor: pointer;
     font-size: 2rem;
-    border: 1px solid var(--secondary-color);
+    border: 4px solid var(--accent-color);
     opacity: 0.8;
     outline: none;
     transition: all 0.3s ease 0s;
@@ -57,7 +57,7 @@ body {
 
 .calculator-grid > button:hover {
     opacity: 1;
-    border: 2px solid var(--primary-color);
+    border: 6px solid var(--primary-color);
 }
 
 .imp-button {
