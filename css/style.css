@@ -1,14 +1,8 @@
 :root {
-    --gradient-color-left: #ADD7F6;
-    --gradient-color-right: #3B28CC;
-    --primary-color: #F3F9D2;
-    --rgb-primary-color: 243, 249, 210;
-    --secondary-color: #241715;
-    --rgb-secondary-color: 36, 23, 21;
-    --accent-color: #F92A82;
-    --rgb-accent-color: 249, 42, 130;
+    --primary-color: #2176AE;
+    --secondary-color: #3B4856;
+    --accent-color: #D6F4FF;
 }
-
 
 * {
     box-sizing: border-box;
@@ -19,13 +13,14 @@
 }
 
 body {
-    background: linear-gradient(to top, var(--gradient-color-left), var(--gradient-color-right));
+    background: url(/img/waves.svg) no-repeat center;
+    background-size: cover;
 }
 
 .output {
+    background-color: var(--secondary-color);
+    color: var(--accent-color);
     grid-column: 1 / -1;
-    background-color: rgba(var(--rgb-secondary-color, 0.75));
-    color: var(--primary-color);
     display: flex;
     align-items: flex-end;
     justify-content: space-around;
@@ -33,17 +28,11 @@ body {
     padding: 25px;
     word-wrap: break-word;
     word-break: break-all;
-    border-radius: 50px 50px 0 0;
-}
-
-.output .previous-operand {
-    color: rgba(var(--rgb-primary-color), 0.75);
-    font-size: 1.5rem;
+    border-radius: 20px 20px 0 0;
 }
 
 .output .current-operand {
     margin-top: 10px;
-    color: rgba(var(--rgb-primary-color), 1);
     font-size: 2.5rem;
     font-weight: 600;
 }
@@ -60,20 +49,19 @@ body {
 .calculator-grid > button {
     cursor: pointer;
     font-size: 2rem;
-    border: 0.5px solid rgba(var(--rgb-secondary-color), 0.5);
+    border: 1px solid var(--secondary-color);
+    opacity: 0.8;
     outline: none;
-    background-color: var(--primary-color);
-    color: var(--secondary-color);
     transition: all 0.3s ease 0s;
 }
 
 .calculator-grid > button:hover {
-    background-color: rgba(var(--rgb-primary-color), 0.9);
-    color: var(--secondary-color);
+    opacity: 1;
+    border: 2px solid var(--primary-color);
 }
 
 .imp-button {
-    font-weight: 6  00;
+    font-weight: 500;
 }
 
 .span-two {
